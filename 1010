@@ -38,3 +38,8 @@ equals方法必须满足的条件：1.）自反性（x.equals(x)必须返回true
                         4.）写完equals方法后，检查是否满足以上条件
                         5.）重写equals方法时都要重写hashcode 方法
                         6.）不要将equals方法中的参数Object对象替换成其他类型的参数，重写是要用@Override注解
+   
+五.String 和 StringBuild、StringBuffer的区别
+   都可以存储和操作字符串。String是只读字符串，引用的字符串内容不能被修改。StringBuild和StringBuffer类表示的字符串对象可以直接进行修改。
+StringBuild 与 StringBuffer方法完全相同，StringBuild是单线程环境下使用的，所有方法没有被synchronized修饰，所以效率较高
+
